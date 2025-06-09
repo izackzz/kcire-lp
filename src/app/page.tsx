@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div
@@ -11,5 +9,5 @@ export default function Home() {
     >
       {/* Queime aqui suas ideias */}
     </div>
-  );
+  )
 }
