@@ -1,6 +1,9 @@
-import { type Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  content: [
+    './src/**/*.{ts,tsx,js,jsx,mdx}', // essencial no Next.js 13+ com app dir
+  ],
   theme: {
     extend: {
       colors: {
