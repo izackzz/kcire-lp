@@ -1,8 +1,8 @@
+import { FlatCompat } from '@eslint/eslintrc'
+import prettier from 'eslint-config-prettier'
+import eslintPluginPrettier from 'eslint-plugin-prettier'
 import { dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { FlatCompat } from '@eslint/eslintrc'
-import eslintPluginPrettier from 'eslint-plugin-prettier'
-import prettier from 'eslint-config-prettier'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -17,6 +17,7 @@ const eslintConfig = [
     plugins: {
       prettier: eslintPluginPrettier,
     },
+    ignores: ['node_modules/**', '.next/**', 'dist/**', 'out/**', 'public/**'],
     rules: {
       'prettier/prettier': 'error',
       'no-console': 'warn',

@@ -1,7 +1,8 @@
+import Link from 'next/link'
+
 import { Arrow } from '@/components/icons/Arrow'
 import Players from '@/components/Players'
 import { MarqueeAnimation } from '@/components/ui/marquee-effect'
-import Link from 'next/link'
 
 export default function Home() {
   return (

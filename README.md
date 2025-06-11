@@ -10,10 +10,10 @@ A Kcire cria **sites, lojas virtuais e identidades visuais** que combinam design
 
 ### Objetivos do Projeto
 
-* Comunicar, de forma direta, o posicionamento e os serviços da Kcire.
-* Demonstrar autoridade por meio de cases, depoimentos e métricas.
-* Coletar leads qualificados via CTA de contato.
-* Ser o ponto de partida para projetos de clientes: fácil de clonar e adaptar.
+- Comunicar, de forma direta, o posicionamento e os serviços da Kcire.
+- Demonstrar autoridade por meio de cases, depoimentos e métricas.
+- Coletar leads qualificados via CTA de contato.
+- Ser o ponto de partida para projetos de clientes: fácil de clonar e adaptar.
 
 ---
 
@@ -24,7 +24,7 @@ A Kcire cria **sites, lojas virtuais e identidades visuais** que combinam design
 | **Front‑end**   | **Next.js** 15 / React 18 | Roteamento híbrido, rendering otimizado |
 |                 | **TypeScript**            | Tipagem estática → menos bugs           |
 |                 | **Tailwind CSS**          | Produtividade + design consistente      |
-| **Animações**   | Framer Motion / Gsap             | Scroll reveal & micro‑interações        |
+| **Animações**   | Framer Motion / Gsap      | Scroll reveal & micro‑interações        |
 | **Hospedagem**  | Vercel (Preview)          | CI/CD automático                        |
 | **Lint/Format** | ESLint, Prettier          | Código limpo                            |
 
@@ -47,8 +47,8 @@ A Kcire cria **sites, lojas virtuais e identidades visuais** que combinam design
 
 ### Pré‑requisitos
 
-* **Node.js** >= 18
-* **npm** (ou pnpm/yarn)
+- **Node.js** >= 18
+- **npm** (ou pnpm/yarn)
 
 ```bash
 # 1. Clone o repo
@@ -90,9 +90,7 @@ EMAIL_TO=contato@kcire.agency
 
 ## 🗺️ Roadmap
 
-*
-
----
+- ***
 
 ## 🤝 Contribuindo
 

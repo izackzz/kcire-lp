@@ -1,7 +1,5 @@
 'use client'
 import { ReactNode, useRef } from 'react'
-
-import { cn } from '@/lib/utils'
 import { wrap } from '@motionone/utils'
 import {
   motion,
@@ -12,6 +10,8 @@ import {
   useTransform,
   useVelocity,
 } from 'framer-motion'
+
+import { cn } from '@/lib/utils'
 
 type MarqueeAnimationProps = {
   children: ReactNode
