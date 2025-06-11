@@ -1,40 +1,50 @@
-@config "../../tailwind.config.js"; /* mantém seu config JS */
-@import 'tailwindcss'; /* injeta base + utilities */
+@import 'tailwindcss';
 
-/* ----------------------  Fontes  ---------------------- */
 @font-face {
   font-family: 'Mont';
+
   src:
-    url('/fonts/Mont-Regular.woff2') format('woff2'),
-    url('/fonts/Mont-Regular.woff') format('woff'),
-    url('/fonts/Mont-Regular.ttf') format('truetype');
+    url('/fonts/Mont/Mont-Regular.woff2') format('woff2'),
+    url('/fonts/Mont/Mont-Regular.woff') format('woff'),
+    url('/fonts/Mont/Mont-Regular.ttf') format('truetype');
+
   font-weight: 400;
+
   font-style: normal;
+
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Mont';
+
   src:
-    url('/fonts/Mont-Bold.woff2') format('woff2'),
-    url('/fonts/Mont-Bold.woff') format('woff'),
-    url('/fonts/Mont-Bold.ttf') format('truetype');
+    url('/fonts/Mont/Mont-Bold.woff2') format('woff2'),
+    url('/fonts/Mont/Mont-Bold.woff') format('woff'),
+    url('/fonts/Mont/Mont-Bold.ttf') format('truetype');
+
   font-weight: 700;
+
   font-style: normal;
+
   font-display: swap;
 }
 
-/* --------------  Tokens globais (Tailwind v4) -------------- */
+/* Adicione mais pesos e estilos conforme necessário */
+
 :root {
   --background: radial-gradient(117.59% 117.59% at 50% -12.31%, #11031c 33.32%, #1c052e 100%);
+  --foreground: #171717;
 }
 
-/* Variáveis que o Tailwind entende como `font-sans`/`font-mono`                 */
-/* O loader `next/font/local` (ver abaixo) vai injetar a variável --font-mont.  */
 @theme inline {
   --color-background: var(--background);
-  --font-sans: var(--font-mont); /* AGORA usa apenas Mont */
-  --font-mono: var(--font-mont); /* idem, caso precise monospace */
+
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-geist-sans);
+
+  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,8 +56,7 @@
 
 body {
   font-family: Mont, sans-serif;
-  font-weight: 400; /* peso base; use `font-bold` quando precisar */
-  /* opcional: Tailwind já adiciona `antialiased` via classe */
+  font-weight: 600;
 }
 
 .kcire-gradient {
