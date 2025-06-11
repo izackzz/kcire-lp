@@ -25,8 +25,38 @@
 }
 
 /* --------------  Tokens globais (Tailwind v4) -------------- */
+
 :root {
   --background: radial-gradient(117.59% 117.59% at 50% -12.31%, #11031c 33.32%, #1c052e 100%);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 /* Variáveis que o Tailwind entende como `font-sans`/`font-mono`                 */
@@ -34,7 +64,41 @@
 @theme inline {
   --color-background: var(--background);
   --font-sans: var(--font-mont); /* AGORA usa apenas Mont */
-  --font-mono: var(--font-mont); /* idem, caso precise monospace */
+  --font-mono: var(--font-mont);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground); /* idem, caso precise monospace */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,6 +112,18 @@ body {
   font-family: Mont, sans-serif;
   font-weight: 400; /* peso base; use `font-bold` quando precisar */
   /* opcional: Tailwind já adiciona `antialiased` via classe */
+}
+/* 🔧 Reset leve para pseudo-elementos */
+::before,
+::after {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+* {
+  position: relative;
+  z-index: 1;
 }
 
 .kcire-gradient {
@@ -77,10 +153,109 @@ body {
 
 .badge {
   display: flex;
-  padding: 5px 35px 5px 5px;
+  padding: 5px 30px 5px 5px;
   align-items: center;
   gap: 10px;
   border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.15);
   background: rgba(243, 153, 255, 0.05);
+}
+.gradient-detail {
+  background: radial-gradient(
+    43.73% 105.53% at 50.92% 100.2%,
+    var(--kcire-3, #f399ff) 43.75%,
+    var(--KCIRE-W, #e5e5e5) 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.kcire-btn-1 {
+  border-radius: 50px;
+  border-bottom: 5px solid var(--kcire-2, #9317ae);
+  background: linear-gradient(180deg, #8295e3 0%, #eaedfa 100%);
+  box-shadow:
+    /* Mesmo box-shadow do hover, mas sem inset para transição suave */
+    0px 0px 0px 0px transparent inset,
+    /* inset transparente para transição */ 0px 9px 12.8px 0px rgba(0, 0, 0, 0.25),
+    0px 313px 88px 0px rgba(147, 23, 174, 0.01),
+    0px 201px 80px 0px rgba(147, 23, 174, 0.07),
+    0px 113px 68px 0px rgba(147, 23, 174, 0.23),
+    0px 50px 50px 0px rgba(147, 23, 174, 0.38),
+    0px 13px 28px 0px rgba(147, 23, 174, 0.44);
+  display: flex;
+  padding: 30px 100px 25px 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease-in-out; /* transita todas propriedades */
+  color: var(--kcire-1, #11031c);
+}
+
+.kcire-btn-1:hover {
+  border-radius: 50px;
+  border-bottom: 5px solid var(--kcire-w, #e5e5e5);
+  background: linear-gradient(180deg, #8295e3 0%, #99adff 100%);
+  box-shadow:
+    /* inset aparece suavemente */
+    0px 4px 16.1px 0px #ffffff80 inset,
+    0px 9px 12.8px 0px rgba(0, 0, 0, 0.25),
+    0px 313px 88px 0px rgba(147, 23, 174, 0.01),
+    0px 201px 80px 0px rgba(147, 23, 174, 0.07),
+    0px 113px 68px 0px rgba(147, 23, 174, 0.23),
+    0px 50px 50px 0px rgba(147, 23, 174, 0.38),
+    0px 13px 28px 0px rgba(147, 23, 174, 0.44);
+  fill: var(--kcire-w, #e5e5e5);
+  transform: translateY(-2px) scale(0.98);
+  transition: all 0.3s ease-in-out;
+  color: var(--kcire-w, #e5e5e5);
+}
+.kcire-btn-1:hover svg {
+  fill: var(--kcire-w, #e5e5e5);
+}
+.kcire-btn-1::before {
+  transition: all 0.5s ease-in-out;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  z-index: -1;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  border-radius: 10px;
+  border: 5px solid rgba(243, 153, 255, 0.05);
+}
+
+.player {
+  border: 4px solid #1a042b;
+  box-shadow: 0px 0px 10.7px 0px rgba(147, 23, 174, 0);
+  outline: 4px solid rgba(243, 153, 255, 0.05);
+  outline-offset: 4px;
+}
+
+.marquee {
+  border: 5px solid var(--KCIRE-W, #e6e6e6);
+  background: linear-gradient(180deg, var(--KCIRE-W, #e5e5e5) 0%, var(--kcire-3, #f399ff) 100%);
+  box-shadow:
+    0px 9px 12.8px 0px rgba(0, 0, 0, 0.25),
+    0px 313px 88px 0px rgba(147, 23, 174, 0.01),
+    0px 201px 80px 0px rgba(147, 23, 174, 0.07),
+    0px 113px 68px 0px rgba(147, 23, 174, 0.23),
+    0px 50px 50px 0px rgba(147, 23, 174, 0.38),
+    0px 13px 28px 0px rgba(147, 23, 174, 0.44);
+  padding: 10px;
+}
+
+.marquee-custom {
+  outline: 4px solid rgba(243, 153, 255, 0.05);
+  outline-offset: 4px;
+  box-shadow:
+    0px 9px 12.8px 0px rgba(0, 0, 0, 0.25),
+    0px 313px 88px 0px rgba(147, 23, 174, 0.01),
+    0px 201px 80px 0px rgba(147, 23, 174, 0.07),
+    0px 113px 68px 0px rgba(147, 23, 174, 0.23),
+    0px 50px 50px 0px rgba(147, 23, 174, 0.38),
+    0px 13px 28px 0px rgba(147, 23, 174, 0.44);
 }
