@@ -101,17 +101,10 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   font-family: Mont, sans-serif;
-  font-weight: 400; /* peso base; use `font-bold` quando precisar */
-  /* opcional: Tailwind já adiciona `antialiased` via classe */
+  font-weight: 400;
+  background: #1c052e;
 }
 /* 🔧 Reset leve para pseudo-elementos */
 ::before,
@@ -131,13 +124,14 @@ body {
     url('/s1-bg.svg'), radial-gradient(117.59% 117.59% at 50% -12.31%, #11031c 33.32%, #1c052e 100%);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .kcire-gradient-2 {
   background-image:
     url('/s1-bg.svg'), radial-gradient(117.59% 117.59% at 50% -12.31%, #11031c 33.32%, #1c052e 100%);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 }
 
 .kcire-gradient::before {
@@ -288,7 +282,7 @@ body {
   display: flex;
   width: 995px;
   max-width: 80vw;
-  padding: 15px;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
   border-radius: 9999px;
@@ -358,4 +352,23 @@ body {
   opacity: 0.3;
   background: #9317ae;
   border-radius: 100%;
+}
+
+.lamp {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: rgba(243, 153, 255, 0.05);
+}
+
+.container {
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* display: block; */
+  /* flex-direction: column; */
+  /* width: 100vw !important; */
+  /* margin: 0 auto !important; */
 }

@@ -3,17 +3,16 @@
 import Lenis from 'lenis'
 import { useEffect, useRef } from 'react'
 
+const easeOutQuad = (t: number) => 1 - (1 - t) * (1 - t)
+
 export function LenisProvider({ children }: { children: React.ReactNode }) {
   const lenis = useRef<Lenis | null>(null)
-
-  const easeOutQuad = (t: number) => 1 - (1 - t) * (1 - t)
-  const effectCurve = easeOutQuad
 
   useEffect(() => {
     if (!lenis.current) {
       lenis.current = new Lenis({
         duration: 0.8,
-        easing: effectCurve,
+        easing: easeOutQuad,
         smoothWheel: true,
         lerp: 0.1,
       })
