@@ -1,4 +1,5 @@
 import Link from 'next/link'
+
 import { KcireIcon } from './icons/KcireIcon'
 export function Navbar() {
   return (

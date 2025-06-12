@@ -1,7 +1,8 @@
-import { Navbar } from '@/components/Navbar'
-import { LenisProvider } from '@/providers/LenisProvider'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+
+import { Navbar } from '@/components/Navbar'
+import { LenisProvider } from '@/providers/LenisProvider'
 import './globals.css'
 
 /* carrega todos os pesos necessários e expõe a CSS var --font-mont */
