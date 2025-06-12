@@ -133,6 +133,12 @@ body {
   background-position: center;
   background-size: cover;
 }
+.kcire-gradient-2 {
+  background-image:
+    url('/s1-bg.svg'), radial-gradient(117.59% 117.59% at 50% -12.31%, #11031c 33.32%, #1c052e 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .kcire-gradient::before {
   content: '';
@@ -185,7 +191,9 @@ body {
     0px 50px 50px 0px rgba(147, 23, 174, 0.38),
     0px 13px 28px 0px rgba(147, 23, 174, 0.44);
   display: flex;
-  padding: 30px 100px 25px 100px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 30px 80px 25px 80px;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -228,6 +236,28 @@ body {
   border: 5px solid rgba(243, 153, 255, 0.05);
 }
 
+.kcire-btn-2 {
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: rgba(243, 153, 255, 0.05);
+  padding: 8px 8px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  height: fit-content !important;
+}
+
+.kcire-btn-2 span {
+  display: block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 3px solid rgba(243, 153, 255, 0.5);
+  background: rgba(243, 153, 255, 0);
+  /* box-shadow: 4px 4px 18.9px 0px rgba(17, 3, 28, 0.3); */
+  backdrop-filter: blur(5px);
+}
+
 .player {
   border: 4px solid #1a042b;
   box-shadow: 0px 0px 10.7px 0px rgba(147, 23, 174, 0);
@@ -238,13 +268,6 @@ body {
 .marquee {
   border: 5px solid var(--KCIRE-W, #e6e6e6);
   background: linear-gradient(180deg, var(--KCIRE-W, #e5e5e5) 0%, var(--kcire-3, #f399ff) 100%);
-  box-shadow:
-    0px 9px 12.8px 0px rgba(0, 0, 0, 0.25),
-    0px 313px 88px 0px rgba(147, 23, 174, 0.01),
-    0px 201px 80px 0px rgba(147, 23, 174, 0.07),
-    0px 113px 68px 0px rgba(147, 23, 174, 0.23),
-    0px 50px 50px 0px rgba(147, 23, 174, 0.38),
-    0px 13px 28px 0px rgba(147, 23, 174, 0.44);
   padding: 10px;
 }
 
@@ -253,9 +276,86 @@ body {
   outline-offset: 4px;
   box-shadow:
     0px 9px 12.8px 0px rgba(0, 0, 0, 0.25),
+    0px -15px 50px 20px hsla(274, 80%, 10%, 0.5),
     0px 313px 88px 0px rgba(147, 23, 174, 0.01),
     0px 201px 80px 0px rgba(147, 23, 174, 0.07),
     0px 113px 68px 0px rgba(147, 23, 174, 0.23),
     0px 50px 50px 0px rgba(147, 23, 174, 0.38),
     0px 13px 28px 0px rgba(147, 23, 174, 0.44);
+}
+
+.navbar {
+  display: flex;
+  width: 995px;
+  max-width: 80vw;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+
+  background:
+    repeating-linear-gradient(-45deg, #9317ae10, #9317ae10 3px, #00000000 3px, #00000000 6px),
+    radial-gradient(100% 50% at 50% 0%, rgba(28, 5, 46, 0.8) 0%, rgba(17, 3, 28, 0.8) 100%);
+  box-shadow:
+    0px 20px 20px 20px rgba(11, 0, 25, 0.25),
+    0px -5px 50px 0px rgba(12, 0, 26, 0.8) inset;
+  backdrop-filter: blur(5px);
+}
+
+.card-s2 {
+  padding: 25px;
+  border-radius: 10px;
+  border: 3px solid rgba(243, 153, 255, 0.5);
+  opacity: 1;
+
+  background-image:
+    radial-gradient(#9317ae10 2px, transparent 2px), radial-gradient(#9317ae10 2px, transparent 2px);
+  background-size: 10px 10px;
+  background-position:
+    0 0,
+    5px 5px;
+
+  box-shadow: 4px 4px 18.9px 0px rgba(17, 3, 28, 0.3);
+  backdrop-filter: blur(40px);
+}
+
+.dot-timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  outline: 5px solid #f399ff;
+  outline-offset: -20px;
+  border-radius: 12px;
+  background-color: var(--kcire-1, hsla(274, 81%, 6%, 0.8));
+  border: 1px solid hsla(289, 77%, 39%, 1);
+  box-shadow:
+    0px 0px 25px 0px var(--kcire-1, #11031c),
+    0px 0px 10px 0px var(--kcire-2, #9317ae) inset;
+}
+.shine::before {
+  content: '';
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translatex(-50%);
+  filter: blur(100px);
+  mix-blend-mode: screen;
+  width: 800px;
+  height: 80%;
+  pointer-events: none;
+  opacity: 0.3;
+  background: #9317ae;
+  border-radius: 100%;
 }

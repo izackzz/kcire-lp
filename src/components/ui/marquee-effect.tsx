@@ -1,5 +1,4 @@
 'use client'
-import { ReactNode, useRef } from 'react'
 import { wrap } from '@motionone/utils'
 import {
   motion,
@@ -10,6 +9,7 @@ import {
   useTransform,
   useVelocity,
 } from 'framer-motion'
+import { ReactNode, useRef } from 'react'
 
 import { cn } from '@/lib/utils'
 
@@ -55,7 +55,7 @@ function MarqueeAnimation({
   })
 
   return (
-    <div className="overflow-hidden marquee-custom max-w-[100vw] text-nowrap flex-nowrap flex relative">
+    <div className="overflow-hidden marquee-custom max-w-[100vw] text-nowrap flex-nowrap flex">
       <motion.div
         className={cn(
           'font-bold uppercase text-5xl flex flex-nowrap text-nowrap *:block *:me-10',

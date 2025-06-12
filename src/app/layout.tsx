@@ -1,3 +1,5 @@
+import { Navbar } from '@/components/Navbar'
+import { LenisProvider } from '@/providers/LenisProvider'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
@@ -21,7 +23,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt" className={mont.variable}>
-      <body className="antialiased overflow-x-hidden">{children}</body>
+      <body className="antialiased overflow-x-hidden">
+        <Navbar></Navbar>
+        <LenisProvider>{children}</LenisProvider>
+      </body>
     </html>
   )
 }
