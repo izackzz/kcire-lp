@@ -12,14 +12,25 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...compat.extends(
+    'next/core-web-vitals',
+    'next/typescript',
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
+  ),
   {
     plugins: {
       prettier: eslintPluginPrettier,
+      '@typescript-eslint': true,
     },
     ignores: ['node_modules/**', '.next/**', 'dist/**', 'out/**', 'public/**'],
+    settings: {
+      tailwindcss: {
+        callees: ['clsx', 'classnames', 'cn'], // se usa helpers para classes dinâmicas, declare aqui
+      },
+    },
     rules: {
-      'prettier/prettier': 'error',
+      'prettier/prettier': 'warn',
       'no-console': 'warn',
       'import/order': [
         'warn',
@@ -28,6 +39,7 @@ const eslintConfig = [
           'newlines-between': 'always',
         },
       ],
+      'tailwindcss/classnames-order': 'warn',
     },
   },
   prettier,

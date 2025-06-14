@@ -1,40 +1,22 @@
-import Link from 'next/link'
-
-import { Arrow } from '@/components/icons/Arrow'
+import { HeroComponent } from '@/components/HeroComponent'
 import { KcirePlus } from '@/components/icons/KcirePlus'
-import Players from '@/components/Players'
+import Lamp from '@/components/Lamp'
+import { ProjectCard } from '@/components/ProjectCard'
 import { MarqueeAnimation } from '@/components/ui/marquee-effect'
+
+import ScrollFloat from '@/components/ScrollFloat'
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="mx-auto">
       {/* SESSION #1 */}
       <div className="w-100vw kcire-gradient-2 overflow-hidden pb-28 gap-12 flex flex-col text-18 items-center text-center  text-kcire-w bg-center min-h-[800px] h-[80vh] bg-cover justify-center">
-        <div className="!fixed top-0 lg:min-w-[750px] left-1/2 -translate-x-2/4 z-0 pt-46 flex flex-col gap-12">
-          <div className="gap-10 w-100vw itens-center flex-col flex items-center">
-            <div className="badge w-fit">
-              <h3 className="py-2.5 px-5 bg-kcire-2 rounded-full">Branding forte.</h3>
-              <h3>Resultado bruto!</h3>
-            </div>
-            <h1 className="text-40 font-bold">
-              Seu design é a primeira impressão. <br />A gente faz ele ser{' '}
-              <span className="gradient-detail">inesquecível.</span>
-            </h1>
-            <p className="text-28 font-bold">
-              Identidade visual consistente e branding vibrante
-              <br /> que converte <span className="text-kcire-3">curiosos em clientes.</span>
-            </p>
-          </div>
-          <Link href="#services" className="text-24 kcire-btn-1 font-bold">
-            CONHEÇA NOSSOS SERVIÇOS <Arrow className="w-[15px] h-[15px] text-kcire-1" />
-          </Link>
-          <Players />
-        </div>
+        <HeroComponent />
       </div>
 
       {/* SESSION #2 */}
 
-      <div className="min-h-[50vh] shine text-kcire-w text-28 kcire-gradient-2 gap-12 pb-20 justify-center">
+      <div className="min-h-[50vh] hero-hidden shine text-kcire-w text-28 kcire-gradient-2 gap-12 pb-20 justify-center">
         <MarqueeAnimation direction="right" baseVelocity={-1} className="marquee">
           <div className="flex flex-row ">
             <p className="text-36 opacity-50 mr-5 -my-3 font-bold text-kcire-1">•</p>
@@ -78,11 +60,10 @@ export default function Home() {
 
       {/* SESSION #3 */}
 
-      <div className="min-h-[50vh] items-center bg-kcire-4 container flex flex-col p-5 mx-auto gap-20 text-center font-bold text-kcire-w">
-        <div className="lamp"></div>
-        <h2 className="text-52">
-          Apenas alguns de nossos <br /> cases de sucesso
-        </h2>
+      <div className="min-h-[50vh] shine items-center bg-kcire-4 container flex flex-col p-5 mx-auto gap-10 text-center font-bold text-kcire-w">
+        {/* <div className="lamp"></div> */}
+        <Lamp />
+        <h2 className="text-52 w-[700px] pt-20">Apenas alguns de nossos cases de sucesso</h2>
         <div className=" px-[35px] py-2.5 bg-[#f399ff]/5 rounded-[7px] outline-2 outline-white/20 inline-flex gap-2.5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,6 +83,90 @@ export default function Home() {
           </svg>
           <p className="pt-1 pr-2">clique para ver</p>
         </div>
+
+        {/* cards dos cases de sucesso */}
+
+        <div className="w-full max-w-[1140px] gap-8 flex flex-col">
+          <ProjectCard
+            pr1="SITE INSTITUCIONAL"
+            pr2="+6D Gerados"
+            title="Projeto Hydra"
+            image="/images/project-01.png"
+          />
+          <ProjectCard
+            pr1="LOJA LATAM"
+            pr2="+6D Gerados"
+            title="Projeto Alpha Center"
+            image="/images/project-02.png"
+          />
+          <ProjectCard
+            pr1="LANDING PAGE"
+            pr2="+5D Gerados"
+            title="Projeto Midnight Society"
+            image="/images/project-03.png"
+          />
+          <ProjectCard
+            pr1="LOJA NACIONAL"
+            pr2="+6D Gerados"
+            title="Projeto Koala"
+            image="/images/project-04.png"
+          />
+        </div>
+        <div className=" px-[35px] py-2.5 bg-[#f399ff]/5 rounded-[7px] outline-2 outline-white/20 inline-flex gap-2.5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="26"
+            viewBox="0 0 25 26"
+            fill="none"
+          >
+            <path
+              d="M18.825 6.675H18.8365M6.75 1.5H18.25C21.4256 1.5 24 4.07436 24 7.25V18.75C24 21.9256 21.4256 24.5 18.25 24.5H6.75C3.57436 24.5 1 21.9256 1 18.75V7.25C1 4.07436 3.57436 1.5 6.75 1.5ZM17.1 12.2755C17.2419 13.2326 17.0784 14.21 16.6328 15.0689C16.1872 15.9277 15.4821 16.6241 14.6179 17.0591C13.7536 17.4941 12.7742 17.6455 11.819 17.4918C10.8637 17.3381 9.98122 16.8871 9.29706 16.2029C8.6129 15.5188 8.16189 14.6363 8.00818 13.681C7.85446 12.7258 8.00587 11.7464 8.44088 10.8821C8.87588 10.0179 9.57231 9.3128 10.4311 8.86718C11.29 8.42155 12.2674 8.25808 13.2245 8.4C14.2008 8.54477 15.1046 8.99968 15.8024 9.69755C16.5003 10.3954 16.9552 11.2992 17.1 12.2755Z"
+              stroke="#99FFCC"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p className="pt-0.5 pr-2">São dezenas, você verá mais em nosso instagram</p>
+        </div>
+      </div>
+
+      {/* SESSION #4 */}
+      <div className="min-h-[50vh] shine items-center bg-kcire-4 container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
+        <Lamp />
+        <h2 className="text-52 w-[450px] pt-20">O que dizem nossos clientes</h2>
+      </div>
+
+      {/* SESSION #5 */}
+      <div className="w-full h-screen text-3 flex flex-col gap-10 p-30 pt-80 ">
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=40%"
+          stagger={0.03}
+        >
+          Pare de perder tempo com o que não funciona.
+        </ScrollFloat>
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=40%"
+          stagger={0.03}
+        >
+          Na Kcire, o impacto é
+        </ScrollFloat>
+        <ScrollFloat
+          animationDuration={1}
+          ease="back.inOut(2)"
+          scrollStart="center bottom+=50%"
+          scrollEnd="bottom bottom-=40%"
+          stagger={0.03}
+        >
+          imediato
+        </ScrollFloat>
       </div>
     </main>
   )
