@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { KcireIcon } from './icons/KcireIcon'
 export function Navbar() {
   return (
-    <nav className="navbar ">
+    <nav className="navbar">
       <>
         <KcireIcon className="mx-12" />
         <ul className="lg:flex hidden space-x-6 text-18 text-kcire-3">

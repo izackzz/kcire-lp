@@ -1,13 +1,11 @@
 import type { SVGProps } from 'react'
 
-export function KcireIcon(props: SVGProps<SVGSVGElement>) {
+export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="129"
-      height="35"
-      fill="none"
       viewBox="0 0 129 35"
+      className={`w-[129px] h-auto ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
       <path
