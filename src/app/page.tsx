@@ -247,7 +247,7 @@ export default function Home() {
         className="items-center z-[4]  container flex flex-col p-5 pb-30 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w"
       >
         <div className="square-kcire lg:px-30 lg:pt-20 px-5 pt-15  pb-0 flex flex-col items-center gap-5 justify-between">
-          <div className="flex lg:flex-row flex-col lg:items-center max-lg:px-14 itens-start gap-10 justify-between">
+          <div className="flex lg:flex-row flex-col lg:items-center max-lg:px-14 gap-10 justify-between">
             <KcireIcon className="w-[200px]" />
 
             <p className="text-kcire-w text-20 lg:w-[400px] w-full  font-normal text-left ">
