@@ -28,7 +28,16 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          'focus-visible:border-ring focus-visible:ring-ring/50 flex flex-1 items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=closed]]:rounded-[10px] [&[data-state=open]>svg]:rotate-[135deg] [&[data-state=open]>svg]:fill-kcire-4/50',
+          // foco, ícone e transições
+          'flex flex-1 items-start justify-between gap-4 border focus-visible:border-ring focus-visible:ring-ring/50 transition-all outline-none disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-[135deg] [&[data-state=open]>svg]:fill-kcire-4',
+          // base comum
+          'text-16 text-left p-4 px-6 data-[state=open]:rounded-t-[10px] data-[state=closed]:rounded-[10px] font-bold',
+          // aberto: gradiente, texto e border
+          'data-[state=open]:bg-gradient-to-r data-[state=open]:from-kcire-3 data-[state=open]:to-kcire-3/50',
+          'data-[state=open]:text-kcire-4 data-[state=open]:border data-[state=open]:border-kcire-2',
+          // fechado: gradiente, texto e border
+          'data-[state=closed]:bg-gradient-to-r data-[state=closed]:from-kcire-1 data-[state=closed]:to-kcire-1/50',
+          'data-[state=closed]:text-kcire-3 data-[state=closed]:border data-[state=closed]:border-kcire-2',
           className
         )}
         {...props}
@@ -40,11 +49,11 @@ function AccordionTrigger({
           height="16"
           viewBox="0 0 15 16"
           fill="none"
-          className="pointer-events-none transition-all fill-kcire-1 size-4 shrink-0 translate-y-0.5  duration-200"
+          className="pointer-events-none transition-all fill-kcire-3 size-4 shrink-0 translate-y-0.5  duration-200"
         >
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M0 8.00001C0 3.85787 3.35787 0.5 7.50002 0.5C11.6422 0.5 15.0001 3.85787 15.0001 8.00001C15.0001 12.1421 11.6422 15.5 7.50002 15.5C3.35787 15.5 0 12.1421 0 8.00001ZM8.43753 4.83543C8.43753 4.31766 8.01778 3.89793 7.50002 3.89793C6.98225 3.89793 6.56251 4.31766 6.56251 4.83543V7.062H4.33595C3.81817 7.062 3.39845 7.48174 3.39845 7.9995C3.39845 8.51727 3.81817 8.93698 4.33595 8.93698H6.56251V11.1636C6.56251 11.6814 6.98225 12.1011 7.50002 12.1011C8.01778 12.1011 8.43753 11.6814 8.43753 11.1636V8.93698H10.6641C11.1818 8.93698 11.6016 8.51727 11.6016 7.9995C11.6016 7.48174 11.1818 7.062 10.6641 7.062H8.43753V4.83543Z"
             // fill="#E6E6E6"
           />

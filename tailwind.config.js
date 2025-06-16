@@ -5,6 +5,13 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx,js,jsx,mdx}'],
   theme: {
     extend: {
+      screens: {
+        'max-sm': { max: '639px' }, // ≤ 639px
+        'max-md': { max: '767px' }, // ≤ 767px
+        'max-lg': { max: '1023px' }, // ≤ 1023px
+        'max-xl': { max: '1279px' }, // ≤ 1279px
+        'max-2xl': { max: '1535px' }, // ≤ 1535px
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },

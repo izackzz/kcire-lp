@@ -20,9 +20,9 @@ import {
 
 export default function Home() {
   return (
-    <main className="mx-auto">
+    <main className="overflow-x-hidden lg:[&>div]:px-2">
       {/* SESSION #1 */}
-      <div className="w-100vw kcire-gradient-2 overflow-hidden pb-28 gap-12 flex flex-col text-18 items-center text-center  text-kcire-w bg-center min-h-[800px] h-[80vh] bg-cover justify-center">
+      <div className="w-100vw lg:!bg-contain max-lg:!bg-cover kcire-gradient-2 overflow-hidden pb-28 gap-12 flex flex-col text-18 items-center text-center  text-kcire-w bg-center min-h-[800px] h-[80vh] bg-cover justify-center">
         <HeroComponent />
       </div>
 
@@ -37,12 +37,11 @@ export default function Home() {
             <p className="text-18 ml-5 font-bold text-kcire-1">O FUTURO CHEGOU</p>
           </div>
         </MarqueeAnimation>
-        <KcirePlus className="mx-auto my-20 mb-[-450px]" />
+        <KcirePlus className="mx-auto max-lg:px-10 my-20 lg:-mb-[450px] max-lg:mb-0  " />
 
         {/*  */}
-
-        <div className="w-full p-16 px-16 lg:px-46 -translate-x-4 flex flex-col lg:flex-row justify-between">
-          <div className="flex flex-col my-auto gap-7 max-w-[430px]">
+        <div className="w-full xl:px-46 max-lg:px-0 lg:-translate-x-4 flex max-lg:justify-center max-xl:flex-col xl:flex-row gap-7 lg:justify-between">
+          <div className="flex flex-col my-auto gap-7 max-xl:gap-10 max-xl:mx-10 xl:max-w-[430px] max-xl:max-w-full">
             <div className="card-s2">
               A Kcire te faz referência no seu nicho, seja qual for, pois vamos{' '}
               <span className="text-kcire-3 font-bold">além do comum.</span>
@@ -54,14 +53,14 @@ export default function Home() {
 
           {/*  */}
 
-          <div className="flex flex-col gap-7 max-w-[295px]">
-            <div className="dot-timeline gap-0 card-s2 outline-1 justify-center items-center flex flex-col outline-offset-8 outline-kcire-2">
+          <div className="flex flex-col xl:gap-7 max-xl:gap-10 max-xl:mx-10  xl:max-w-[295px]  max-xl:max-w-full">
+            <div className="dot-timeline gap-0 card-s2 outline-1 justify-center max-xl:before:opacity-0 items-center flex flex-col outline-offset-8 outline-kcire-2">
               um design que <span className=" text-kcire-3 -mt-2 font-bold text-48">provoca</span>
             </div>
-            <div className="dot-timeline gap-2 card-s2 outline-1 justify-center items-center flex flex-row outline-offset-8 outline-kcire-2">
+            <div className="dot-timeline gap-2 card-s2 outline-1 justify-center items-center flex flex-row outline-offset-8 outline-kcire-2 max-xl:before:opacity-0">
               que <span className=" text-[#9FC] font-bold text-48">vende</span>
             </div>
-            <div className="dot-timeline gap-2 card-s2 outline-1 justify-center items-center flex flex-row outline-offset-8 outline-kcire-2">
+            <div className="dot-timeline gap-2 card-s2 outline-1 justify-center items-center flex flex-row outline-offset-8 outline-kcire-2 max-xl:before:opacity-0">
               que dá <span className=" text-[#9FC] font-bold text-48">ROI!</span>
             </div>
           </div>
@@ -72,10 +71,10 @@ export default function Home() {
 
       {/* SESSION #3 */}
 
-      <div className="min-h-[50vh] shine items-center bg-kcire-4 container flex flex-col p-5 mx-auto gap-10 text-center font-bold text-kcire-w">
+      <div className="min-h-[50vh] shine items-center  container flex flex-col p-5 mx-auto gap-10 text-center font-bold text-kcire-w">
         {/* <div className="lamp"></div> */}
         <Lamp />
-        <h2 className="text-52 w-[700px] heading pt-20">
+        <h2 className="lg:text-52 max-lg:text-40 lg:w-[700px] max-lg:w-full heading pt-20">
           Apenas alguns de nossos cases de sucesso
         </h2>
         <div className=" px-[35px] py-2.5 bg-[#f399ff]/5 rounded-[7px] outline-2 outline-white/20 inline-flex gap-2.5">
@@ -147,39 +146,39 @@ export default function Home() {
       </div>
 
       {/* SESSION #4 */}
-      <div className="min-h-[50vh]  shine items-center bg-kcire-4 container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
+      <div className="min-h-[50vh]  shine items-center  container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
         <Lamp />
         <h2 className="text-52 max-w-[450px] heading pt-20">O que dizem nossos clientes</h2>
-        <div className="p-4 max-w-[550px] w-full">
+        <div className="p-4 max-w-[950px] justify-center align-center flex flex-row w-full">
           <TestimonialSlider />
         </div>
       </div>
 
       {/* SESSION #5 */}
-      <div className=" w-full text-kcire-3 text-52 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 p-30 pt-0 ">
+      <div className=" w-full text-kcire-3 sm:text-52 text-36 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
         <SplitText>Pare de perder tempo com o que não funciona.</SplitText>
       </div>
 
-      <div className=" w-full text-kcire-3 text-52 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 p-30 pt-0 ">
+      <div className=" w-full text-kcire-3 sm:text-52 text-36 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
         <SplitText>Na Kcire, o impacto é</SplitText>
       </div>
 
-      <div className=" w-full text-kcire-3 text-68 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 p-30 pt-0 ">
+      <div className=" w-full text-kcire-3 sm:text-68 text-36 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
         <SplitText>imediato.</SplitText>
       </div>
-      <div className=" w-full text-kcire-3 text-68 font-bold h-[100vh] -mt-80 items-center justify-start text-3 flex flex-col gap-10 p-30 pt-0 ">
+      <div className=" w-full text-kcire-3 sm:text-68 text-36 font-bold h-[100vh] -mt-80 items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
         <SplitText>
           <RocketLottie />
         </SplitText>
       </div>
 
       {/* SESSION #6 */}
-      <div className="shine items-center bg-kcire-4 container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
+      <div className="shine items-center  container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
         <Lamp />
-        <h2 className="text-68 heading pt-10">O PLANO</h2>
+        <h2 className="lg:text-68 text-48 heading pt-10">O PLANO</h2>
         {/* CARDS */}
-        <div className="w-fit flex justify-start flex-row">
-          <div className="card-plans flex-col flex items-start justify-center z-[1] -ml-20 hover:mr-20 mr-0 hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+        <div className="w-fit flex justify-start lg:flex-row max-lg:flex-col max-lg:gap-6">
+          <div className="card-plans flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">1</span>
             <h3 className="heading text-left text-36">Diagnóstico de Oportunidades</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -191,7 +190,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans flex-col flex items-start justify-center z-[2] -ml-20 hover:mr-20 mr-0 hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">2</span>
             <h3 className="heading text-left text-36">Criação Orientada a Meta</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -203,7 +202,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans flex-col flex items-start justify-center z-[3] -ml-20 hover:mr-20 mr-0 hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">3</span>
             <h3 className="heading text-left text-36">Lançamento & Crescimento</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -214,7 +213,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="info-card mx-40 flex flex-row items-center gap-10 justify-between">
+        <div className="info-card xl:mx-40 max-xl:mx-20 flex lg:flex-row flex-col items-center gap-10 justify-between">
           <div className="detail-lamp"></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -243,22 +242,28 @@ export default function Home() {
       </div>
 
       {/* SESSION #7 */}
-      <div className="items-center z-[4] bg-kcire-4 container flex flex-col p-5 pb-30 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
-        <div className="square-kcire px-30 pt-20 pb-0 mx-40 flex flex-col items-center gap-5 justify-between">
-          <div className="flex flex-row items-center gap-10 justify-between">
+      <div
+        id="services"
+        className="items-center z-[4]  container flex flex-col p-5 pb-30 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w"
+      >
+        <div className="square-kcire lg:px-30 lg:pt-20 px-5 pt-15  pb-0 xl:mx-40 max-xl:mx-20 flex flex-col items-center gap-5 justify-between">
+          <div className="flex lg:flex-row flex-col lg:items-center max-lg:px-15 itens-start gap-10 justify-between">
             <KcireIcon className="w-[200px]" />
 
-            <p className="text-kcire-w text-20 w-[400px] font-normal text-left ">
+            <p className="text-kcire-w text-20 lg:w-[400px] w-full  font-normal text-left ">
               <b>Conheça nossos serviços</b> <br /> Cada Projeto conta uma história... Deixe que
               façamos o mundo conhecer a história de sua empresa
             </p>
           </div>
 
           {/* CARROSSEL TAILWIND */}
-          <div className="p-4 max-w-[550px] w-full">
+          <div className="p-4 lg:max-w-[550px] w-full">
             <FinalSlider />
           </div>
-          <Link href="#services" className="text-24 kcire-btn-1 !-mb-10 font-bold">
+          <Link
+            href="https://wa.me/5514996144832"
+            className="text-24 kcire-btn-1 px-[50px] pt-[25px] pb-[20px] !-mb-10 font-bold"
+          >
             ENTRAR EM CONTATO <Arrow className="w-[15px] h-[15px] text-kcire-1" />
           </Link>
         </div>
@@ -266,8 +271,8 @@ export default function Home() {
 
       {/* SESSION #8 */}
       <div className="items-center w-full kcire-gradient-3 rounded-[30px] container flex flex-col p-5 mx-auto gap-30 text-center font-bold text-kcire-w">
-        <div className="flex flex-row gap-30 p-30 justify-start">
-          <div className="w-[300px] flex flex-col gap-5">
+        <div className="flex lg:flex-row flex-col gap-30 xl:p-30 lg:justify-start max-lg:items-center justify-center">
+          <div className="w-[300px] max-lg:items-center flex flex-col gap-5">
             <h3 className="text-40 text-center font-bold">
               Perguntas <br /> frequêntes
             </h3>
@@ -276,9 +281,14 @@ export default function Home() {
               Fale com nosso suporte no WhatsApp (55) 99999-8888 suporte@agenciakcire.com.br
             </p>
           </div>
-          <Accordion type="single" collapsible className="w-[500px] flex flex-col gap-1">
-            <AccordionItem value="item-1 ">
-              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+          <Accordion
+            type="single"
+            defaultValue="item-1"
+            collapsible
+            className="w-[500px] flex flex-col gap-1"
+          >
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 text-kcire-4 rounded-t-[10px] font-bold">
                 Em quanto tempo meu site ou loja fica no ar?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
@@ -286,8 +296,8 @@ export default function Home() {
                 caso? Fale conosco agora e receba em minutos.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-2 ">
-              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 text-kcire-4 rounded-t-[10px] font-bold">
                 Em quanto tempo meu site ou loja fica no ar?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
@@ -295,8 +305,8 @@ export default function Home() {
                 caso? Fale conosco agora e receba em minutos.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-3 ">
-              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 rounded-t-[10px] font-bold">
                 Em quanto tempo meu site ou loja fica no ar?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
@@ -304,8 +314,8 @@ export default function Home() {
                 caso? Fale conosco agora e receba em minutos.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-4 ">
-              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 rounded-t-[10px] font-bold">
                 Em quanto tempo meu site ou loja fica no ar?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
@@ -313,8 +323,8 @@ export default function Home() {
                 caso? Fale conosco agora e receba em minutos.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-5 ">
-              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 rounded-t-[10px] font-bold">
                 Em quanto tempo meu site ou loja fica no ar?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
@@ -326,10 +336,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[1920px] px-[450px] py-[50px] bg-gradient-to-b from-kcire-1/20 to-kcire-1/50 inline-flex justify-between items-center">
-        <div className="justify-center text-[#f299ff] text-18 font-normal">
+      <div className="w-full p-12 align-center items-center flex justify-center bg-gradient-to-b from-kcire-1/20 to-kcire-1/50 ">
+        <p className="justify-center w-fit text-[#f299ff] text-18 font-normal">
           Copyright © 2025 | AGÊNCIA KCIRE - XX.XXX.XXX/0001-XX
-        </div>
+        </p>
       </div>
     </main>
   )

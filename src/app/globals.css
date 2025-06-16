@@ -124,14 +124,14 @@ body {
     url('/s1-bg.svg'), radial-gradient(117.59% 117.59% at 50% -12.31%, #11031c 33.32%, #1c052e 100%);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  /* background-size: contain; */
 }
 .kcire-gradient-2 {
   background-image:
     url('/s1-bg.svg'), radial-gradient(117.59% 117.59% at 50% -12.31%, #11031c 33.32%, #1c052e 100%);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  /* background-size: cover; */
 }
 
 .kcire-gradient::before {
@@ -212,7 +212,6 @@ body {
   display: flex;
   width: fit-content;
   margin: 0 auto;
-  padding: 30px 80px 25px 80px;
   justify-content: center;
   align-items: center;
   gap: 15px;
@@ -306,7 +305,7 @@ body {
 .navbar {
   display: flex;
   width: 995px;
-  max-width: 80vw;
+  max-width: 95vw;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
@@ -506,7 +505,8 @@ body {
   border-radius: 10px;
   border: 3px solid rgba(243, 153, 255, 0.5);
   transition: all 0.3s ease-in-out;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   /* height: fit-content; */
   background:
     repeating-linear-gradient(
@@ -758,8 +758,10 @@ body {
   border: 2px solid #f399ff50;
   box-shadow: 4px 4px 18.9px 0px rgba(17, 3, 28, 1);
   transition: all 0.3s ease-in-out;
+  margin: auto;
 }
 .testimonial-img {
   border-radius: 5px;
   border: 2px solid #f399ff10;
+  max-width: 300px;
 }

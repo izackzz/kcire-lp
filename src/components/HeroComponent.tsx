@@ -26,7 +26,10 @@ export function HeroComponent() {
           <br /> que converte <span className="text-kcire-3">curiosos em clientes.</span>
         </p>
       </div>
-      <Link href="#services" className="text-24 kcire-btn-1 font-bold">
+      <Link
+        href="#services"
+        className="text-24 px-[70px] pt-[30px] pb-[25px] kcire-btn-1 font-bold"
+      >
         CONHEÇA NOSSOS SERVIÇOS <Arrow className="w-[15px] h-[15px] text-kcire-1" />
       </Link>
       <Players />
