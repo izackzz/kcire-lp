@@ -22,7 +22,7 @@ export const FinalSlider = () => {
       >
         <SwiperSlide>
           <div className="card-project w-fit ">
-            <h3 className="text-36 text-kcire-w">
+            <h3 className="sm:text-36 text-28 text-kcire-w">
               Social Media de
               <br />
               alta conversão
@@ -38,7 +38,7 @@ export const FinalSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="card-project w-fit ">
-            <h3 className="text-36 text-kcire-w">
+            <h3 className="sm:text-36 text-28 text-kcire-w">
               Páginas de venda que
               <br />
               vendem sozinhas
@@ -54,7 +54,7 @@ export const FinalSlider = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="card-project w-fit ">
-            <h3 className="text-36 text-kcire-w">
+            <h3 className="sm:text-36 text-28 text-kcire-w">
               Lojas e Mascotes de
               <br />
               Branding disruptivo
