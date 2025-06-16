@@ -17,7 +17,7 @@ export default function SplitText({ children }: Props) {
     const container = containerRef.current!
     const fixed = fixedRef.current!
     // 1) layout scroll + fixo
-    Object.assign(container.style, { position: 'relative', height: '200vh', width: '100%' })
+    Object.assign(container.style, { position: 'relative', height: '100vh', width: '100%' })
     Object.assign(fixed.style, {
       position: 'fixed',
       top: '50%',
@@ -93,7 +93,11 @@ export default function SplitText({ children }: Props) {
 
   return (
     <div className="shine" ref={containerRef}>
-      <div ref={fixedRef} aria-label={isString ? (children as string) : undefined}>
+      <div
+        className="sm:w-[500px] [&>div]:mx-auto max-sm:w-full max-sm:px-6 justify-center"
+        ref={fixedRef}
+        aria-label={isString ? (children as string) : undefined}
+      >
         {!isString && children}
       </div>
     </div>

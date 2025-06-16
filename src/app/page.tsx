@@ -159,7 +159,7 @@ export default function Home() {
         <SplitText>Pare de perder tempo com o que não funciona.</SplitText>
       </div>
 
-      <div className=" w-full text-kcire-3 sm:text-52 text-36 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
+      <div className="[&>div>div]:max-sm:px-24 w-full text-kcire-3 sm:text-52 text-36 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
         <SplitText>Na Kcire, o impacto é</SplitText>
       </div>
 
