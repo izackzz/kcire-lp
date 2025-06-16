@@ -1,11 +1,22 @@
+import { FinalSlider } from '@/components/FinalSlider'
 import { HeroComponent } from '@/components/HeroComponent'
+import { Arrow } from '@/components/icons/Arrow'
 import { KcireIcon } from '@/components/icons/KcireIcon'
 import { KcirePlus } from '@/components/icons/KcirePlus'
 import Lamp from '@/components/Lamp'
 import { ProjectCard } from '@/components/ProjectCard'
 import RocketLottie from '@/components/RocketLottie'
 import SplitText from '@/components/SplitText'
+import { TestimonialSlider } from '@/components/TestimonialSlider'
 import { MarqueeAnimation } from '@/components/ui/marquee-effect'
+import Link from 'next/link'
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
 
 export default function Home() {
   return (
@@ -136,9 +147,12 @@ export default function Home() {
       </div>
 
       {/* SESSION #4 */}
-      <div className="min-h-[50vh]  outline-amber-300 outline shine items-center bg-kcire-4 container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
+      <div className="min-h-[50vh]  shine items-center bg-kcire-4 container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
         <Lamp />
         <h2 className="text-52 max-w-[450px] heading pt-20">O que dizem nossos clientes</h2>
+        <div className="p-4 max-w-[550px] w-full">
+          <TestimonialSlider />
+        </div>
       </div>
 
       {/* SESSION #5 */}
@@ -165,7 +179,7 @@ export default function Home() {
         <h2 className="text-68 heading pt-10">O PLANO</h2>
         {/* CARDS */}
         <div className="w-fit flex justify-start flex-row">
-          <div className="card-plans flex-col flex items-start justify-center z-[1] -ml-5 hover:mr-10 mr-0 hover:-ml-0 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans flex-col flex items-start justify-center z-[1] -ml-20 hover:mr-20 mr-0 hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">1</span>
             <h3 className="heading text-left text-36">Diagnóstico de Oportunidades</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -177,7 +191,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans flex-col flex items-start justify-center z-[2] -ml-5 hover:mr-10 mr-0 hover:-ml-0 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans flex-col flex items-start justify-center z-[2] -ml-20 hover:mr-20 mr-0 hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">2</span>
             <h3 className="heading text-left text-36">Criação Orientada a Meta</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -189,7 +203,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans flex-col flex items-start justify-center z-[3] -ml-5 hover:mr-10 mr-0 hover:-ml-0 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans flex-col flex items-start justify-center z-[3] -ml-20 hover:mr-20 mr-0 hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">3</span>
             <h3 className="heading text-left text-36">Lançamento & Crescimento</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -228,16 +242,93 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="items-center bg-kcire-4 container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
-        <div className="info-card p-30 mx-40 flex flex-col items-center gap-10 justify-between">
+      {/* SESSION #7 */}
+      <div className="items-center z-[4] bg-kcire-4 container flex flex-col p-5 pb-30 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
+        <div className="square-kcire px-30 pt-20 pb-0 mx-40 flex flex-col items-center gap-5 justify-between">
           <div className="flex flex-row items-center gap-10 justify-between">
-            <KcireIcon className="w-[300px]" />
+            <KcireIcon className="w-[200px]" />
 
-            <p className="text-kcire-w text-22 w-[400px] font-normal text-left ">
+            <p className="text-kcire-w text-20 w-[400px] font-normal text-left ">
               <b>Conheça nossos serviços</b> <br /> Cada Projeto conta uma história... Deixe que
               façamos o mundo conhecer a história de sua empresa
             </p>
           </div>
+
+          {/* CARROSSEL TAILWIND */}
+          <div className="p-4 max-w-[550px] w-full">
+            <FinalSlider />
+          </div>
+          <Link href="#services" className="text-24 kcire-btn-1 !-mb-10 font-bold">
+            ENTRAR EM CONTATO <Arrow className="w-[15px] h-[15px] text-kcire-1" />
+          </Link>
+        </div>
+      </div>
+
+      {/* SESSION #8 */}
+      <div className="items-center w-full kcire-gradient-3 rounded-[30px] container flex flex-col p-5 mx-auto gap-30 text-center font-bold text-kcire-w">
+        <div className="flex flex-row gap-30 p-30 justify-start">
+          <div className="w-[300px] flex flex-col gap-5">
+            <h3 className="text-40 text-center font-bold">
+              Perguntas <br /> frequêntes
+            </h3>
+            <p className="font-normal text-20">Ainda resta alguma dúvida?</p>
+            <p className="font-normal text-20">
+              Fale com nosso suporte no WhatsApp (55) 99999-8888 suporte@agenciakcire.com.br
+            </p>
+          </div>
+          <Accordion type="single" collapsible className="w-[500px] flex flex-col gap-1">
+            <AccordionItem value="item-1 ">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+                Em quanto tempo meu site ou loja fica no ar?
+              </AccordionTrigger>
+              <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
+                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
+                caso? Fale conosco agora e receba em minutos.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2 ">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+                Em quanto tempo meu site ou loja fica no ar?
+              </AccordionTrigger>
+              <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
+                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
+                caso? Fale conosco agora e receba em minutos.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3 ">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+                Em quanto tempo meu site ou loja fica no ar?
+              </AccordionTrigger>
+              <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
+                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
+                caso? Fale conosco agora e receba em minutos.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4 ">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+                Em quanto tempo meu site ou loja fica no ar?
+              </AccordionTrigger>
+              <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
+                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
+                caso? Fale conosco agora e receba em minutos.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5 ">
+              <AccordionTrigger className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-3 to-kcire-3/50 text-kcire-4 rounded-t-[10px] font-bold">
+                Em quanto tempo meu site ou loja fica no ar?
+              </AccordionTrigger>
+              <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
+                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
+                caso? Fale conosco agora e receba em minutos.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
+      </div>
+
+      <div className="w-[1920px] px-[450px] py-[50px] bg-gradient-to-b from-kcire-1/20 to-kcire-1/50 inline-flex justify-between items-center">
+        <div className="justify-center text-[#f299ff] text-18 font-normal">
+          Copyright © 2025 | AGÊNCIA KCIRE - XX.XXX.XXX/0001-XX
         </div>
       </div>
     </main>

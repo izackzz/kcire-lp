@@ -5,6 +5,20 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx,js,jsx,mdx}'],
   theme: {
     extend: {
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+      },
       colors: {
         kcire: {
           1: 'hsla(274, 81%, 6%, 1)',
@@ -15,6 +29,7 @@ module.exports = {
         },
       },
       fontSize: {
+        14: ['0.875rem', { lineHeight: '0.875rem' }], // 14px
         18: ['1.125rem', { lineHeight: '1.125rem' }], // 18px
         20: ['1.25rem', { lineHeight: '1.25rem' }], // 20px
         22: ['1.375rem', { lineHeight: '1.375rem' }], // 22px
