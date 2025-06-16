@@ -49,7 +49,7 @@ function AccordionTrigger({
           height="16"
           viewBox="0 0 15 16"
           fill="none"
-          className="pointer-events-none transition-all fill-kcire-3 size-4 shrink-0 translate-y-0.5  duration-200"
+          className="pointer-events-none my-auto transition-all fill-kcire-3 size-4 shrink-0 translate-y-0.5  duration-200"
         >
           <path
             fillRule="evenodd"

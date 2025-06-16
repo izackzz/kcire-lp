@@ -213,7 +213,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="info-card xl:mx-40 max-xl:mx-20 flex lg:flex-row flex-col items-center gap-10 justify-between">
+        <div className="info-card flex lg:flex-row flex-col items-center gap-10 justify-between">
           <div className="detail-lamp"></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -246,8 +246,8 @@ export default function Home() {
         id="services"
         className="items-center z-[4]  container flex flex-col p-5 pb-30 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w"
       >
-        <div className="square-kcire lg:px-30 lg:pt-20 px-5 pt-15  pb-0 xl:mx-40 max-xl:mx-20 flex flex-col items-center gap-5 justify-between">
-          <div className="flex lg:flex-row flex-col lg:items-center max-lg:px-15 itens-start gap-10 justify-between">
+        <div className="square-kcire lg:px-30 lg:pt-20 px-5 pt-15  pb-0 flex flex-col items-center gap-5 justify-between">
+          <div className="flex lg:flex-row flex-col lg:items-center max-lg:px-14 itens-start gap-10 justify-between">
             <KcireIcon className="w-[200px]" />
 
             <p className="text-kcire-w text-20 lg:w-[400px] w-full  font-normal text-left ">
@@ -262,7 +262,7 @@ export default function Home() {
           </div>
           <Link
             href="https://wa.me/5514996144832"
-            className="text-24 kcire-btn-1 px-[50px] pt-[25px] pb-[20px] !-mb-10 font-bold"
+            className="xl:text-24 text-18 kcire-btn-1 px-[50px] pt-[25px] pb-[20px] !-mb-10 font-bold"
           >
             ENTRAR EM CONTATO <Arrow className="w-[15px] h-[15px] text-kcire-1" />
           </Link>
@@ -285,7 +285,7 @@ export default function Home() {
             type="single"
             defaultValue="item-1"
             collapsible
-            className="w-[500px] flex flex-col gap-1"
+            className="lg:w-[500px] w-full flex flex-col gap-1"
           >
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-16 text-left p-4 px-6 text-kcire-4 rounded-t-[10px] font-bold">
@@ -336,8 +336,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full p-12 align-center items-center flex justify-center bg-gradient-to-b from-kcire-1/20 to-kcire-1/50 ">
-        <p className="justify-center w-fit text-[#f299ff] text-18 font-normal">
+      <div className="w-full p-12 align-center mt-15 items-center flex justify-center bg-gradient-to-b from-kcire-1/20 to-kcire-1/50 ">
+        <p className="justify-center text-center w-fit text-[#f299ff] text-18 font-normal">
           Copyright © 2025 | AGÊNCIA KCIRE - XX.XXX.XXX/0001-XX
         </p>
       </div>

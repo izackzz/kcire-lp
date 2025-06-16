@@ -668,6 +668,7 @@ body {
     ),
     rgba(243, 153, 255, 0.05);
   display: flex;
+  /* width: 100%; */
   /* justify-content: center; */
   align-items: center;
   /* gap: 30px; */
@@ -680,6 +681,11 @@ body {
   outline-offset: 5px;
   box-shadow: 4px 4px 18.9px 10px #9317ae50 inset;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 1280px) {
+  .square-kcire {
+    margin: 80px 0px;
+  }
 }
 
 .square-kcire:hover {
