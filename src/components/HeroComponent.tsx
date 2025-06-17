@@ -22,9 +22,8 @@ export function HeroComponent() {
           <span className="gradient-detail">inesquecível.</span>
         </h1>
         <p className="sm:text-28 text-24 font-bold">
-          Identidade visual consistente e branding vibrante
-          {/* <br />  */}
-          que converte <span className="text-kcire-3">curiosos em clientes.</span>
+          Identidade visual consistente e branding vibrante que converte{' '}
+          <span className="text-kcire-3">curiosos em clientes.</span>
         </p>
       </div>
       <Link
