@@ -5,7 +5,6 @@ import { KcireIcon } from '@/components/icons/KcireIcon'
 import { KcirePlus } from '@/components/icons/KcirePlus'
 import Lamp from '@/components/Lamp'
 import { ProjectCard } from '@/components/ProjectCard'
-import RocketLottie from '@/components/RocketLottie'
 import SplitText from '@/components/SplitText'
 import { TestimonialSlider } from '@/components/TestimonialSlider'
 import { MarqueeAnimation } from '@/components/ui/marquee-effect'
@@ -159,26 +158,26 @@ export default function Home() {
         <SplitText>Pare de perder tempo com o que não funciona.</SplitText>
       </div>
 
-      <div className="[&>div>div]:max-sm:px-24 w-full text-kcire-3 sm:text-52 text-36 font-bold h-[120vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
-        <SplitText>Na Kcire, o impacto é</SplitText>
+      <div className="[&>div>div]:max-sm:px-24 w-full text-kcire-3 sm:text-52 text-36 font-bold h-[100vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
+        <SplitText>Na Kcire, o impacto é imediato.</SplitText>
       </div>
 
-      <div className=" w-full text-kcire-3 sm:text-68 text-36 font-bold h-[100vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
+      {/* <div className=" w-full text-kcire-3 sm:text-68 text-36 font-bold h-[100vh] items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
         <SplitText>imediato.</SplitText>
-      </div>
-      <div className=" w-full text-kcire-3 sm:text-68 text-36 font-bold h-[100vh] -mt-80 items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
+      </div> */}
+      {/* <div className=" w-full text-kcire-3 sm:text-68 text-36 font-bold h-[100vh] -mt-80 items-center justify-start text-3 flex flex-col gap-10 max-sm:p-3 sm:p-20 pt-0 ">
         <SplitText>
           <RocketLottie />
         </SplitText>
-      </div>
+      </div> */}
 
       {/* SESSION #6 */}
       <div className="shine items-center  container flex flex-col p-5 pt-30 mx-auto gap-30 text-center font-bold text-kcire-w">
         <Lamp />
-        <h2 className="lg:text-68 text-48 heading pt-10">O PLANO</h2>
+        <h2 className="lg:text-68 text-48 heading pt-10">Diferencial</h2>
         {/* CARDS */}
         <div className="w-fit flex justify-start lg:flex-row max-lg:flex-col max-lg:gap-6">
-          <div className="card-plans flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans !backdrop-blur-2xl flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">1</span>
             <h3 className="heading text-left text-36">Diagnóstico de Oportunidades</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -190,7 +189,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans !backdrop-blur-2xl flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">2</span>
             <h3 className="heading text-left text-36">Criação Orientada a Meta</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -202,7 +201,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans !backdrop-blur-2xl flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">3</span>
             <h3 className="heading text-left text-36">Lançamento & Crescimento</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
