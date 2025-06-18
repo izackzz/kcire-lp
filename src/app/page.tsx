@@ -189,7 +189,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans !backdrop-blur-2xl flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans !backdrop-blur-2xl flex-col flex items-start justify-center z-[2] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">2</span>
             <h3 className="heading text-left text-36">Criação Orientada a Meta</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">
@@ -201,7 +201,7 @@ export default function Home() {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="card-plans !backdrop-blur-2xl flex-col flex items-start justify-center z-[1] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
+          <div className="card-plans !backdrop-blur-2xl flex-col flex items-start justify-center z-[3] lg:-ml-20 lg:hover:mr-20 mr-0 lg:hover:-ml-30 origin-bottom-right hover:rotate-6 -rotate-1 transition-all duration-300">
             <span className="card-number">3</span>
             <h3 className="heading text-left text-36">Lançamento & Crescimento</h3>
             <p className="text-kcire-3 text-18 font-normal text-left">

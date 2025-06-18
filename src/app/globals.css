@@ -527,7 +527,7 @@ body {
   /* transform: rotate(-1deg); */
   outline: 1px solid #f399ff80;
   outline-offset: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: start;
 }
 
@@ -560,6 +560,7 @@ body {
     0px -7px 15px 0px rgba(147, 23, 174, 0.98);
 
   position: absolute;
+  border-radius: 10px;
   bottom: 0;
   left: 0;
 }
