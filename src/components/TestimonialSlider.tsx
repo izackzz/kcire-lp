@@ -24,7 +24,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -62,7 +62,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -88,7 +88,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -114,7 +114,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -140,7 +140,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -166,7 +166,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -192,7 +192,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -218,7 +218,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -244,7 +244,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
@@ -270,7 +270,7 @@ export const TestimonialSlider = () => {
           <div className="testimonial-card flex flex-col gap-3 w-fit ">
             <div className="w-full flex p-3 flex-row gap-5 justify-start items-start">
               <Image
-                src="/images/jesus.png"
+                src="/images/person.png"
                 alt="Player"
                 width={60}
                 height={60}
