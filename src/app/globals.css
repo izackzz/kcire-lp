@@ -164,7 +164,7 @@ body {
   z-index: 2;
   pointer-events: none;
   position: absolute;
-  top: -50%;
+  top: -10%;
   left: 50%;
   transform: translatex(-50%);
   filter: blur(200px);
@@ -197,6 +197,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .kcire-btn-1 {
+  z-index: 3;
   border-radius: 50px;
   border-bottom: 5px solid var(--kcire-2, #9317ae);
   background: linear-gradient(180deg, #8295e3 0%, #eaedfa 100%);
@@ -516,7 +517,7 @@ body {
       #00000000 3px,
       #00000000 6px
     ),
-    rgba(243, 153, 255, 0.05);
+    rgba(243, 153, 255, 0.1);
   box-shadow: 4px 4px 18.9px 10px #9317ae00 inset;
   backdrop-filter: blur(40px) !important;
   -webkit-backdrop-filter: blur(40px) !important;

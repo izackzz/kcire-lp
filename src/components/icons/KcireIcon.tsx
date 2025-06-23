@@ -45,7 +45,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
         <radialGradient
@@ -56,7 +56,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
         <radialGradient
@@ -67,7 +67,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
         <radialGradient
@@ -78,7 +78,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
         <radialGradient
@@ -89,7 +89,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
         <radialGradient
@@ -100,7 +100,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
         <radialGradient
@@ -111,7 +111,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
         <radialGradient
@@ -122,7 +122,7 @@ export function KcireIcon({ className = '', ...props }: SVGProps<SVGSVGElement>)
           gradientTransform="matrix(14.63724 -39.03106 40.8773 15.3296 32.5 32)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".438" stopColor="#F399FF" />
+          <stop offset=".438" stopColor="#E6E6E6" />
           <stop offset="1" stopColor="#E6E6E6" />
         </radialGradient>
       </defs>

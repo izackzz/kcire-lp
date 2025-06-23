@@ -21,7 +21,7 @@ export function HeroComponent() {
           Seu design é a primeira impressão. <br />A gente faz ele ser{' '}
           <span className="gradient-detail">inesquecível.</span>
         </h1>
-        <p className="sm:text-28 text-24 font-bold">
+        <p className="sm:text-28 text-24 -mt-3 font-normal">
           Identidade visual consistente e branding vibrante que converte{' '}
           <span className="text-kcire-3">curiosos em clientes.</span>
         </p>

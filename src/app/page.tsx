@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* SESSION #3 */}
 
-      <div className="min-h-[50vh] shine items-center  container flex flex-col p-5 mx-auto gap-10 text-center font-bold text-kcire-w">
+      <div className="min-h-[50vh] shine items-center bg-kcire-4 container flex flex-col p-5 mx-auto gap-10 text-center font-bold text-kcire-w">
         {/* <div className="lamp"></div> */}
         <Lamp />
         <h2 className="lg:text-52 max-lg:text-40 lg:w-[700px] max-lg:w-full heading pt-20">
@@ -269,7 +269,7 @@ export default function Home() {
       </div>
 
       {/* SESSION #8 */}
-      <div className="items-center w-full kcire-gradient-3 rounded-[30px] container flex flex-col p-5 mx-auto gap-30 text-center font-bold text-kcire-w">
+      <div className="items-center w-full kcire-gradient-3 z-[3] rounded-[30px] container flex flex-col p-5 mx-auto gap-30 text-center font-bold text-kcire-w">
         <div className="flex lg:flex-row flex-col gap-30 xl:p-30 lg:justify-start max-lg:items-center justify-center">
           <div className="w-[300px] max-lg:items-center flex flex-col gap-5">
             <h3 className="text-40 text-center font-bold">
