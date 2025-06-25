@@ -512,12 +512,12 @@ body {
   background:
     repeating-linear-gradient(
       -45deg,
-      hsla(0, 0%, 90%, 0.05),
-      hsla(0, 0%, 90%, 0.05) 3px,
-      #00000000 3px,
-      #00000000 6px
+      hsla(274, 80%, 20%, 0.9),
+      hsla(274, 80%, 20%, 0.9) 3px,
+      hsla(274, 80%, 10%, 0.9) 3px,
+      hsla(274, 80%, 10%, 0.9) 6px
     ),
-    rgba(243, 153, 255, 0.1);
+    hsla(274, 80%, 20%, 0.9);
   box-shadow: 4px 4px 18.9px 10px #9317ae00 inset;
   backdrop-filter: blur(40px) !important;
   -webkit-backdrop-filter: blur(40px) !important;

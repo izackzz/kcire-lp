@@ -19,7 +19,7 @@ export function ProjectCard({ pr1, pr2, title, image }: ProjectCardProps) {
         </p>
         <h3 className="project-title pt-6 text-52">{title}</h3>
       </div>
-      <div className="max-h-[440px] max-sm:min-w-full sm:min-w-[500px] z-0 max-sm:-ml-10 max-sm:mt-10 max-w-[500px]">
+      <div className="max-h-[440px] hover:-translate-y-[18rem] transition-all duration-[2000ms] max-sm:min-w-full sm:min-w-[500px] z-0 max-sm:-ml-10 max-sm:mt-10 max-w-[500px]">
         <Image
           src={image}
           alt={title}
