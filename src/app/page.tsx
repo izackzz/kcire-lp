@@ -300,38 +300,38 @@ export default function Home() {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-16 text-left p-4 px-6 text-kcire-4 rounded-t-[10px] font-bold">
-                Em quanto tempo meu site ou loja fica no ar?
+                Qual é o investimento para contratar a Kcire?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
-                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
-                caso? Fale conosco agora e receba em minutos.
+                Oferecemos pacotes flexíveis que cabem no seu orçamento. Envie suas metas e
+                enviaremos um orçamento transparente sem compromisso.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger className="text-16 text-left p-4 px-6 rounded-t-[10px] font-bold">
-                Em quanto tempo meu site ou loja fica no ar?
+                Vocês trabalham só com dropshipping?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
-                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
-                caso? Fale conosco agora e receba em minutos.
+                Não. Criamos sites institucionais, landing pages e identidades visuais. Se você quer
+                vender online, temos a solução. Chame a gente e descubra qual formato rende mais.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger className="text-16 text-left p-4 px-6 rounded-t-[10px] font-bold">
-                Em quanto tempo meu site ou loja fica no ar?
+                O que acontece depois da entrega?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
-                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
-                caso? Fale conosco agora e receba em minutos.
+                Você recebe suporte contínuo, relatórios mensais e otimizações sem dor de cabeça.
+                Entre em contato para ver como mantemos seu projeto sempre atualizado.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
               <AccordionTrigger className="text-16 text-left p-4 px-6 rounded-t-[10px] font-bold">
-                Em quanto tempo meu site ou loja fica no ar?
+                Posso ver resultados reais antes de decidir?
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
-                Em média, até 5 dias úteis após o briefing. Quer um cronograma exato para o seu
-                caso? Fale conosco agora e receba em minutos.
+                Claro! Temos cases que mostram aumento de conversão e receita. Peça pelo chat ou
+                WhatsApp e enviaremos o material completo.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -340,7 +340,7 @@ export default function Home() {
 
       <div className="w-full p-12 align-center mt-15 items-center flex justify-center bg-gradient-to-b from-kcire-1/20 to-kcire-1/50 ">
         <p className="justify-center text-center w-fit text-[#f299ff] text-18 font-normal">
-          Copyright © 2025 | AGÊNCIA KCIRE - XX.XXX.XXX/0001-XX
+          Copyright © 2025 | AGÊNCIA KCIRE {/* - XX.XXX.XXX/0001-XX */}
         </p>
       </div>
     </main>
