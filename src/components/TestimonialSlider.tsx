@@ -30,7 +30,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">João | Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -68,7 +68,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -94,7 +94,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -120,7 +120,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -146,7 +146,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -172,7 +172,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -198,7 +198,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -224,7 +224,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Tiago | Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -250,7 +250,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Gustavo | Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper
@@ -276,7 +276,7 @@ export const TestimonialSlider = () => {
                 height={60}
                 className="player rounded-full object-cover hover:-translate-y-1 transition-transform duration-300 ease-in-out"
               />
-              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-3 text-left">
+              <div className="flex flex-col gap-1 my-auto font-normal pt-1 text-kcire-w text-left">
                 <p className="text-14">Marcos | Cliente Kcire</p>
                 <p className="text-14 py-[1px] px-2 border border-kcire-3/20 rounded-[3px]">
                   Dropshipper

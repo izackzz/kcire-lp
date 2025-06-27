@@ -17,7 +17,7 @@ export default function SplitText({ children }: Props) {
     const container = containerRef.current!
     const fixed = fixedRef.current!
     // 1) layout scroll + fixo
-    Object.assign(container.style, { position: 'relative', height: '100vh', width: '100%' })
+    Object.assign(container.style, { position: 'relative', height: '120vh', width: '100%' })
     Object.assign(fixed.style, {
       position: 'fixed',
       top: '50%',
