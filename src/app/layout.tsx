@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt" className={mont.variable}>
       <body className="antialiased overflow-x-hidden">
+        <Analytics />
         <Navbar></Navbar>
         <LenisProvider>{children}</LenisProvider>
       </body>
