@@ -102,25 +102,29 @@ export default function Home() {
           <ProjectCard
             pr1="SITE INSTITUCIONAL"
             pr2="+6D Gerados"
-            title="Projeto Hydra"
+            // title="Projeto Hydra"
+            title="Hydra Hub"
             image="/images/project-01.png"
           />
           <ProjectCard
             pr1="LOJA LATAM"
             pr2="+6D Gerados"
-            title="Projeto Alpha Center"
+            // title="Projeto Alpha Center"
+            title="Alpha Center"
             image="/images/project-02.png"
           />
           <ProjectCard
             pr1="LANDING PAGE"
             pr2="+5D Gerados"
-            title="Projeto Midnight Society"
+            // title="Projeto Midnight Society"
+            title="Midnight Society"
             image="/images/project-03.png"
           />
           <ProjectCard
             pr1="LOJA NACIONAL"
             pr2="+6D Gerados"
-            title="Projeto Koala"
+            // title="Projeto Koala"
+            title="Loja Koala"
             image="/images/project-04.png"
           />
         </div>
@@ -255,8 +259,9 @@ export default function Home() {
             <KcireIcon className="w-[200px]" />
 
             <p className="text-kcire-w text-20 lg:w-[400px] w-full  font-normal text-left ">
-              <b>Conheça nossos serviços</b> <br /> Cada Projeto conta uma história... Deixe que
-              façamos o mundo conhecer a história de sua empresa
+              {/* <b>Conheça nossos serviços</b> <br /> Cada Projeto conta uma história... Deixe que */}
+              <b>Conheça nossos serviços</b> <br /> Cada conta uma história... Deixe que façamos o
+              mundo conhecer a história de sua empresa
             </p>
           </div>
 
@@ -324,7 +329,8 @@ export default function Home() {
               </AccordionTrigger>
               <AccordionContent className="text-16 text-left p-4 px-6 bg-gradient-to-r from-kcire-4 to-kcire-4/5 border-[2px] border-kcire-2/50 font-normal rounded-b-[10px]">
                 Você recebe suporte contínuo, relatórios mensais e otimizações sem dor de cabeça.
-                Entre em contato para ver como mantemos seu projeto sempre atualizado.
+                {/* Entre em contato para ver como mantemos seu projeto sempre atualizado. */}
+                Entre em contato para ver como mantemos seu sempre atualizado.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
