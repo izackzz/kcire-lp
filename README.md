@@ -38,8 +38,6 @@ A Kcire cria **sites, lojas virtuais e identidades visuais** que combinam design
 2. **Scroll text inquisitivo** (IntersectionObserver) reforçando dor e solução.
 3. **Processo em 3 passos** animado com ícones.
 4. **Carrossel de cases** e **depoimentos**.
-5. **Formulário de contato** integrado ao SendGrid.
-6. **A11y & SEO** básicos (alt tags, meta OG, sitemap.xml).
 
 ---
 
